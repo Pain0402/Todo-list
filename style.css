@@ -49,6 +49,11 @@ h3 {
     outline: none;
 }
 
+@media (max-width: 543px) {
+    .content {
+        width: 80%;
+    }
+}
 .btn-add {
     width: 25px;
     height: 25px;
