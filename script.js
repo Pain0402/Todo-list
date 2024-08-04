@@ -40,7 +40,9 @@
             let done = li.querySelector(`.item-${numTask} .done`);
             let del = li.querySelector(`.item-${numTask} .delete`);
             
-            del.setAttribute("class", `fa-regular fa-circle-xmark delete ${numTask}`)
+            del.setAttribute("class", `fa-regular fa-circle-xmark delete ${numTask}`);
+            
+            
             var f = true;
             done.addEventListener("click", () => {
                 var contentItem = li.querySelector(`.content-item`);
@@ -72,9 +74,11 @@
                 numTask--;
             })
             numTask++;
-            // console.log(localStorage.length);
-            // localStorage.clear();
+
             
+        }
+        else {
+            alert("You have to write something!");
         }
 
     }
